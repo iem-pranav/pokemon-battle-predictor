@@ -67,6 +67,14 @@ python train_model.py     # creates model/battle_model.pkl
 python app.py             # open http://127.0.0.1:5000
 ```
 
+## Run with Docker
+
+```bash
+docker build -t pokemon-battle-predictor .
+docker run --rm -p 5000:5000 pokemon-battle-predictor
+```
+Then open http://localhost:5000
+
 ## Limitations & next steps
 
 - Uses only base stats — it doesn't know type effectiveness (Water beats Fire), so
